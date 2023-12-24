@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">farmacia</string>
+    <string name="login"><b><u>Login now</u></b></string>
+    <string name="regi"><b><u>Register now</u></b></string>
+</resources>

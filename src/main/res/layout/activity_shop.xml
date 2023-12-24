@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shop"
+    android:background="@color/white" >
+
+    <ImageButton
+        android:id="@+id/image_btn_arrow_shop"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:onClick="backToLogin"
+        android:src="@drawable/ector"
+        android:tint="@color/black"
+        tools:ignore="UseAppTint,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tv_test"
+        android:layout_width="105dp"
+        android:layout_height="55dp"
+        android:text="Drugs"
+        android:fontFamily="@font/poppins_semibold"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="160dp"
+        android:textSize="30dp"
+        android:textColor="@color/luxuryBlue"/>
+
+
+    <ScrollView
+        android:id="@+id/scroll_view_shopping"
+        android:layout_width="match_parent"
+        android:layout_height="547dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        tools:ignore="NotSibling">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_shop"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:onClick="returnToDetails"
+                app:cardBackgroundColor="@color/luxuryBlue"
+                android:layout_marginVertical="10dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+
+                    android:id="@+id/drug_image_shop"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/panadol" />
+
+                <TextView
+                    android:id="@+id/drug_name_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Panadol Extra"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/drug_price_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="20.75 EGP"
+                    android:textColor="@color/white"
+                    android:textSize="17.5sp" />
+
+                <TextView
+                    android:id="@+id/drug_quantity_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="95dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Quantity: 120"
+                    android:textColor="@color/white"
+                    android:textSize="17.5sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="348dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/heart_icon" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="337dp"
+                    android:layout_marginTop="70dp"
+                    android:src="@drawable/baseline_add_24" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_shop2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:onClick="returnToDetails2"
+                app:cardBackgroundColor="@color/luxuryBlue"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+
+                    android:id="@+id/drug_image_shop2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/congestal" />
+
+                <TextView
+                    android:id="@+id/drug_name_shop2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Congestal"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/drug_price_shop2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="55.25 EGP"
+                    android:textColor="@color/white"
+                    android:textSize="17.5sp" />
+
+                <TextView
+                    android:id="@+id/drug_quantity_shop2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="95dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Quantity: 90"
+                    android:textColor="@color/white"
+                    android:textSize="17.5sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="348dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/heart_icon" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_shop1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="337dp"
+                    android:layout_marginTop="70dp"
+                    android:src="@drawable/baseline_add_24" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_shop3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:onClick="returnToDetails3"
+                app:cardBackgroundColor="@color/luxuryBlue"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+
+                    android:id="@+id/drug_image_shop3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/antinal" />
+
+                <TextView
+                    android:id="@+id/drug_name_shop3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Antinal"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/drug_price_shop3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="23.55 EGP"
+                    android:textColor="@color/white"
+                    android:textSize="17.5sp" />
+
+                <TextView
+                    android:id="@+id/drug_quantity_shop3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="95dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Quantity: 55"
+                    android:textColor="@color/white"
+                    android:textSize="17.5sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="348dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/heart_icon" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_shop3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="337dp"
+                    android:layout_marginTop="70dp"
+                    android:src="@drawable/baseline_add_24" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_shop4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:onClick="returnToDetails4"
+                app:cardBackgroundColor="@color/luxuryBlue"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+
+                    android:id="@+id/drug_image_shop4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/cataflam" />
+
+                <TextView
+                    android:id="@+id/drug_name_shop4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Cataflam"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/drug_price_shop4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="66.26 EGP"
+                    android:textColor="@color/white"
+                    android:textSize="17.5sp" />
+
+                <TextView
+                    android:id="@+id/drug_quantity_shop4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="95dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Quantity: 102"
+                    android:textColor="@color/white"
+                    android:textSize="17.5sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="348dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/heart_icon" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_shop2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="337dp"
+                    android:layout_marginTop="70dp"
+                    android:src="@drawable/baseline_add_24" />
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_searchshop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edittext_searchshop"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:hint="search for drugs"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+</RelativeLayout>

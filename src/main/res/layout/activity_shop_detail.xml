@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shopdetail">
+
+    <ImageButton
+        android:id="@+id/image_btn_arrow_shop_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ector"
+        android:onClick="goBack"
+        android:backgroundTint="@color/luxuryBlue"
+        tools:ignore="SpeakableTextPresentCheck"
+        />
+    <ImageButton
+        android:id="@+id/image_shopping_shop_detail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="callUs"
+       android:layout_alignParentEnd="true"
+        android:src="@drawable/phone_call"
+        tools:ignore="SpeakableTextPresentCheck"
+        />
+
+    <ScrollView
+        android:id="@+id/scroll_view_shop_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_btn_arrow_shop_detail"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_shop_detail"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:src="@drawable/panadol" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_shop_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_name_product_shop_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Panadol"
+                        android:textColor="@color/luxuryBlue"
+                        android:textSize="25sp" />
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:id="@+id/drug_price_detail"
+                            android:textColor="@color/luxuryBlue"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="20.75 EGP"
+                            android:textSize="19sp"
+                            android:layout_marginLeft="10dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="340dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/baseline_stars_24"/>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/decrement_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="130dp"
+                        android:onClick="returnToDecrement"
+                        android:src="@drawable/baseline_minus_24"
+                        tools:ignore="ContentDescription,DuplicateClickableBoundsCheck,SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:id="@+id/quantity_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="@color/luxuryBlue"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="35sp"
+                        android:layout_marginLeft="200dp"
+                        android:layout_marginTop="130dp"/>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/increment_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="returnToIncrement"
+                        android:layout_marginLeft="270dp"
+                        android:layout_marginTop="130dp"
+                        android:src="@drawable/baseline_add_24_black"
+                        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:id="@+id/prod_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Production date: 15/06/2023"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginTop="210dp"
+                        android:layout_marginLeft="20dp"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/exp_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expiration date: 15/06/2027"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginTop="240dp"
+                        android:layout_marginLeft="20dp"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/how_to_use"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="How to use it: 2 bills per day"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginTop="290dp"
+                        android:layout_marginLeft="90dp"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/active_brief"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Active ingredients:\n-500mg paracetamol\n-65mg caffeine"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginTop="350dp"
+                        android:layout_marginLeft="110dp"
+                        android:textAlignment="center" />
+
+                    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                        android:id="@+id/fab_add_to_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order Now"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginTop="450dp"
+                        android:layout_marginLeft="110dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:onClick="clickme"
+                        app:icon="@drawable/cart_icon"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
